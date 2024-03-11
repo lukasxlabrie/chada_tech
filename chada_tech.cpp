@@ -68,3 +68,14 @@ void displayBothTimeFormats(int hours, int minutes, int seconds) {
     cout << "24-Hour Time: " << to24HourTime(hours, minutes, seconds) << "\n";
     cout << "12-Hour Time: " << to12HourTime(hours, minutes, seconds) << "\n";
 }
+
+// Add a second
+void addSecond(int &hours, int &minutes, int &seconds) {
+    seconds++; // Tick
+    if (seconds >= 60) {
+        seconds = 0; // Reset and carry over
+        addMinute(hours, minutes, seconds); // Add a minute if we overflow
+    }
+}
+
+
