@@ -30,3 +30,12 @@ string to24HourTime(int hours, int minutes, int seconds) {
     // Combine the hours, minutes, and seconds with colons
     return formatAsTwoDigits(hours) + ":" + formatAsTwoDigits(minutes) + ":" + formatAsTwoDigits(seconds);
 }
+
+// 12-hour format
+string to12HourTime(int hours, int minutes, int seconds) {
+    string period = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    if (hours == 0) hours = 12; // Midnight or noon? It's 12!
+    // Stitch it together with a space before AM/PM
+    return formatAsTwoDigits(hours) + ":" + formatAsTwoDigits(minutes) + ":" + formatAsTwoDigits(seconds) + " " + period;
+}
