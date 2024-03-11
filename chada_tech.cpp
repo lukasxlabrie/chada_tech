@@ -13,8 +13,7 @@ string formatAsTwoDigits(int number) {
         result = "0" + result; // Slap a zero in front
     }
     return result;
-
-    }
+}
 
 // Need some stars for the menu?
 string repeatStar(int count) {
@@ -50,8 +49,7 @@ void printMenu() {
     cout << "4. Display 12-hour time format\n";
     cout << "5. Display 24-hour time format\n";
     cout << "6. Quit\n";
-
-        // And a fancy footer
+    // And a fancy footer
     cout << repeatStar(28) << "\n";
 }
 
@@ -92,7 +90,6 @@ void addHour(int &hours, int &minutes, int &seconds) {
     hours = (hours + 1) % 24; // Cycle through 0-23
 }
 
-
 // Where everything starts and ends
 int main() {
     int hours = 0, minutes = 0, seconds = 0; 
@@ -115,5 +112,3 @@ int main() {
 
     return 0;
 }
-
-
