@@ -54,3 +54,11 @@ void printMenu() {
         // And a fancy footer
     cout << repeatStar(28) << "\n";
 }
+
+// What does the user want to do? 
+int processMenuChoice() {
+    int choice;
+    cout << "Enter your choice: ";
+    cin >> choice;
+    return choice;
+}
