@@ -24,3 +24,9 @@ string repeatStar(int count) {
     }
     return stars;
 }
+
+// 24-hour format
+string to24HourTime(int hours, int minutes, int seconds) {
+    // Combine the hours, minutes, and seconds with colons
+    return formatAsTwoDigits(hours) + ":" + formatAsTwoDigits(minutes) + ":" + formatAsTwoDigits(seconds);
+}
