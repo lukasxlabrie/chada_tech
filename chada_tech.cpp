@@ -39,3 +39,18 @@ string to12HourTime(int hours, int minutes, int seconds) {
     // Stitch it together with a space before AM/PM
     return formatAsTwoDigits(hours) + ":" + formatAsTwoDigits(minutes) + ":" + formatAsTwoDigits(seconds) + " " + period;
 }
+
+// Show the user what they can do
+void printMenu() {
+    // Fancy menu header
+    cout << repeatStar(10) + " MENU " + repeatStar(10) << "\n";
+    cout << "1. Add one second\n";
+    cout << "2. Add one minute\n";
+    cout << "3. Add one hour\n";
+    cout << "4. Display 12-hour time format\n";
+    cout << "5. Display 24-hour time format\n";
+    cout << "6. Quit\n";
+
+        // And a fancy footer
+    cout << repeatStar(28) << "\n";
+}
