@@ -92,3 +92,28 @@ void addHour(int &hours, int &minutes, int &seconds) {
     hours = (hours + 1) % 24; // Cycle through 0-23
 }
 
+
+// Where everything starts and ends
+int main() {
+    int hours = 0, minutes = 0, seconds = 0; 
+
+    while (true) { 
+        printMenu(); 
+        int choice = processMenuChoice(); 
+        
+        // React to the choice
+        switch (choice) {
+            case 1: addSecond(hours, minutes, seconds); break;
+            case 2: addMinute(hours, minutes, seconds); break;
+            case 3: addHour(hours, minutes, seconds); break;
+            case 4: cout << to12HourTime(hours, minutes, seconds) << "\n"; break;
+            case 5: cout << to24HourTime(hours, minutes, seconds) << "\n"; break;
+            case 6: return 0; // Bye-bye!
+            default: cout << "Try again." << endl;
+        }
+    }
+
+    return 0;
+}
+
+
