@@ -13,3 +13,14 @@ string formatAsTwoDigits(int number) {
         result = "0" + result; // Slap a zero in front
     }
     return result;
+
+    }
+
+// Need some stars for the menu?
+string repeatStar(int count) {
+    string stars = "";
+    for (int i = 0; i < count; i++) {
+        stars += "*"; // Stars all in a row
+    }
+    return stars;
+}
