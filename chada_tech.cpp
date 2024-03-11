@@ -62,3 +62,9 @@ int processMenuChoice() {
     cin >> choice;
     return choice;
 }
+
+// Show off both ways to tell the time
+void displayBothTimeFormats(int hours, int minutes, int seconds) {
+    cout << "24-Hour Time: " << to24HourTime(hours, minutes, seconds) << "\n";
+    cout << "12-Hour Time: " << to12HourTime(hours, minutes, seconds) << "\n";
+}
