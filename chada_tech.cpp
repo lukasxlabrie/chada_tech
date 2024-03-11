@@ -86,3 +86,9 @@ void addMinute(int &hours, int &minutes, int &seconds) {
         addHour(hours, minutes, seconds); // Add an hour if we overflow
     }
 }
+
+// Add hours
+void addHour(int &hours, int &minutes, int &seconds) {
+    hours = (hours + 1) % 24; // Cycle through 0-23
+}
+
