@@ -78,4 +78,11 @@ void addSecond(int &hours, int &minutes, int &seconds) {
     }
 }
 
-
+// Add minutes
+void addMinute(int &hours, int &minutes, int &seconds) {
+    minutes++; // Tock
+    if (minutes >= 60) {
+        minutes = 0; // Reset and carry over
+        addHour(hours, minutes, seconds); // Add an hour if we overflow
+    }
+}
