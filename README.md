@@ -28,3 +28,6 @@ Chada Tech wants their clients to be able to view a 12- and a 24-hour clock on t
 To stand out as a top candidate:
 
 Apply program logic by creating two clocks that display simultaneously and allow for user input using secure and efficient C++ code.
+
+
+PS this actually took me like 2 weeks to do I just decided to set-up a repo for it now
